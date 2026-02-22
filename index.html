@@ -58,12 +58,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
                 "Your symptoms could be either allergies or a cold.";
         }
     }
-</script>
-</script>
-  </script>
-
-
-
 <style>	
 body {
      margin: 0em;
@@ -145,8 +139,6 @@ body {
     <div class="w3-container">
         <p>Are your symptoms seasonal or chronic?</p>
 
-        <a href="#resultsPage" onclick="allergyAdd();" class="w3-btn w3-black">Seasonal</a>
-        <a href="#resultsPage" onclick="coldAdd();" class="w3-btn w3-black">Chronic</a>
     </div>
 	<a href="#resultsPage" onclick="allergyAdd(); showResults();" class="w3-btn w3-black">
     Seasonal
@@ -158,7 +150,14 @@ body {
 </div>
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
-<div class="page" id="resultsPage">
+    <header class="w3-container w3-flat-carrot">
+        <h1>Results</h1>
+    </header>
+
+    <div class="w3-container">
+        <p id="results"></p>
+    </div>
+	<div class="page" id="resultsPage">
     <header class="w3-container w3-flat-carrot">
         <h1>Results</h1>
     </header>
@@ -167,8 +166,6 @@ body {
         <p id="results"></p>
     </div>
 </div>
-	<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
 </footer>
 
 </body>
