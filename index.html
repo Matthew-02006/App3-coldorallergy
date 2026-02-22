@@ -147,7 +147,30 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>Content of page 2 goes here.</p>
 	</div>
 </div>	
+<div class="page" id="three">
+    <header class="w3-container w3-blue">
+        <h1>Question 3</h1>
+    </header>
 
+    <div class="w3-container">
+        <p>Do you have a sore throat?</p>
+
+        <a href="#four" onclick="coldAdd();" class="w3-btn w3-black">Yes</a>
+        <a href="#four" onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+    </div>
+</div>
+<div class="page" id="four">
+    <header class="w3-container w3-blue">
+        <h1>Question 4</h1>
+    </header>
+
+    <div class="w3-container">
+        <p>Are your symptoms seasonal or chronic?</p>
+
+        <a href="#resultsPage" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
+        <a href="#resultsPage" onclick="coldAdd();" class="w3-btn w3-black">No</a>
+    </div>
+</div>
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
